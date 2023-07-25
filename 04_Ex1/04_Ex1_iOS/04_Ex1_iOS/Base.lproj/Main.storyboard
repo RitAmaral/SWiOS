@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_4_Ex1_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o seu Nome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obE-jd-Ftp">
+                                <rect key="frame" x="99" y="191" width="195" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o seu Apelido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-DV-xed">
+                                <rect key="frame" x="99" y="248" width="195" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxD-6h-nQ3">
+                                <rect key="frame" x="146" y="317" width="100" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="sPU-Pb-6Zt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirmar">
+                                    <color key="baseBackgroundColor" systemColor="systemCyanColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="botaoConfirmar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXj-WP-3uR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXj-S4-M5I">
+                                <rect key="frame" x="174.33333333333334" y="408" width="44.333333333333343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemCyanColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="TxD-6h-nQ3" firstAttribute="centerX" secondItem="pJp-DV-xed" secondAttribute="centerX" id="12V-7t-hbw"/>
+                            <constraint firstItem="obE-jd-Ftp" firstAttribute="trailing" secondItem="pJp-DV-xed" secondAttribute="trailing" id="5Rs-8C-bdD"/>
+                            <constraint firstItem="TxD-6h-nQ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="A8K-WE-dwz"/>
+                            <constraint firstItem="TxD-6h-nQ3" firstAttribute="top" secondItem="pJp-DV-xed" secondAttribute="bottom" constant="35" id="Iby-F4-Nq0"/>
+                            <constraint firstItem="GXj-S4-M5I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aIH-6c-5ev"/>
+                            <constraint firstItem="obE-jd-Ftp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="de2-t5-b2b"/>
+                            <constraint firstItem="obE-jd-Ftp" firstAttribute="leading" secondItem="pJp-DV-xed" secondAttribute="leading" id="hNx-zo-44b"/>
+                            <constraint firstItem="TxD-6h-nQ3" firstAttribute="centerX" secondItem="GXj-S4-M5I" secondAttribute="centerX" id="jdl-uA-GWB"/>
+                            <constraint firstItem="obE-jd-Ftp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="rc9-KF-Ccb"/>
+                            <constraint firstItem="pJp-DV-xed" firstAttribute="top" secondItem="obE-jd-Ftp" secondAttribute="bottom" constant="23" id="sFp-rG-vRn"/>
+                            <constraint firstItem="obE-jd-Ftp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5W-ER-Q9K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Resultado" destination="GXj-S4-M5I" id="5Gc-MM-8zb"/>
+                        <outlet property="insApelido" destination="pJp-DV-xed" id="iPz-QU-TY3"/>
+                        <outlet property="insNome" destination="obE-jd-Ftp" id="6F4-xx-Kdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470.9923664122137" y="22.535211267605636"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
